@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+html {
+  direction: rtl;
+  text-align: right;
+  font-family: "Cairo", sans-serif !important;
+}
+body {
+  font-family: "Cairo", sans-serif !important;
+}
+.offset-2-mo {
+  margin-left: auto;
+  margin-right: 16.66666667%;
+}
+.offset-1-mo {
+  margin-left: auto;
+  margin-right: 8.33333333%;
+}
+.link-Watch-video-header a span {
+  transform: rotate(180deg);
+}
+.box-About-text ul li::after {
+  right: 0;
+}
+.box-slider-products ul li::after {
+  right: 0;
+}
+.icon-quote {
+  transform: rotateY(180deg);
+}
+.box-accordion-faq .accordion-item {
+  border: none;
+  border-right: 4px solid var(--demo-1-primary, #5d1be0);
+  border-radius: 8px 0px 0px 8px;
+}
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+.box-form .form-select {
+  background-position: left 0.75rem center;
+}
+.form-control[type="email"],
+.form-control[type="tel"] {
+  text-align: left;
+}
+.box-slider-Choose .swiper-button-prev {
+  right: 0;
+}
+.box-slider-Choose .swiper-button-next {
+  left: auto;
+  right: 50px;
+}
+.box-slider-Choose .swiper-pagination-fraction {
+  left: 0;
+  right: auto;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+.offcanvas.offcanvas-start{
+  left: auto;
+  right: 0;
+  transform: translateX(100%);
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 991px) {
+  .offset-2-mo {
+    margin-right: 0;
+  }
+  .offset-1-mo {
+    margin-right: 0;
+  }
+
+  .box-list-link-nav-1 {
+    left: -100%;
+    right: auto;
+  }
+
+  .box-list-link-nav-1.open {
+    left: 0;
+    right: auto;
+  }
+}
